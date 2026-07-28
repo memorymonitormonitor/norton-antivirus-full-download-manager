@@ -1,0 +1,94 @@
+<svg viewBox="0 0 1200 360" width="1200" height="360" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0e1a"/>
+      <stop offset="55%" stop-color="#0f1830"/>
+      <stop offset="100%" stop-color="#111d3a"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffcc33" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#ffcc33" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="shieldFill" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffdd55"/>
+      <stop offset="55%" stop-color="#f5a623"/>
+      <stop offset="100%" stop-color="#d4820f"/>
+    </linearGradient>
+    <linearGradient id="shieldStroke" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fff3c4"/>
+      <stop offset="100%" stop-color="#c97a0a"/>
+    </linearGradient>
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#dbe9ff"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="1200" height="360" fill="url(#bg)"/>
+
+  <circle cx="960" cy="120" r="260" fill="url(#glow1)"/>
+  <circle cx="1050" cy="230" r="200" fill="url(#glow2)"/>
+
+  <!-- circuit lines background -->
+  <g stroke="#2b3a5e" stroke-width="1.5" opacity="0.55" fill="none">
+    <path d="M60 40 L 220 40 L 220 90 L 340 90"/>
+    <path d="M60 320 L 260 320 L 260 260 L 400 260"/>
+    <path d="M900 40 L 900 90 L 1000 90 L 1000 140"/>
+    <path d="M700 320 L 700 270 L 820 270"/>
+    <circle cx="220" cy="40" r="4" fill="#2b3a5e" stroke="none"/>
+    <circle cx="340" cy="90" r="4" fill="#2b3a5e" stroke="none"/>
+    <circle cx="260" cy="320" r="4" fill="#2b3a5e" stroke="none"/>
+    <circle cx="400" cy="260" r="4" fill="#2b3a5e" stroke="none"/>
+    <circle cx="1000" cy="140" r="4" fill="#2b3a5e" stroke="none"/>
+    <circle cx="820" cy="270" r="4" fill="#2b3a5e" stroke="none"/>
+  </g>
+
+  <!-- particle dots -->
+  <g fill="#ffcc33" opacity="0.5">
+    <circle cx="760" cy="60" r="2.5"/>
+    <circle cx="1120" cy="90" r="2"/>
+    <circle cx="1080" cy="300" r="2.5"/>
+    <circle cx="820" cy="330" r="2"/>
+    <circle cx="990" cy="60" r="1.8"/>
+  </g>
+
+  <!-- large shield right side -->
+  <g transform="translate(960,175)">
+    <path d="M0 -110 L95 -70 L95 20 C95 90 45 130 0 150 C-45 130 -95 90 -95 20 L-95 -70 Z"
+          fill="url(#shieldFill)" stroke="url(#shieldStroke)" stroke-width="4"/>
+    <path d="M0 -95 L80 -60 L80 20 C80 78 38 113 0 132 C-38 113 -80 78 -80 20 L-80 -60 Z"
+          fill="none" stroke="#fff8e0" stroke-width="1.5" opacity="0.5"/>
+    <path d="M-42 5 L-12 38 L48 -35" fill="none" stroke="#1a1f2e" stroke-width="12"
+          stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- orbit rings around shield -->
+  <g fill="none" stroke="#22d3ee" opacity="0.35">
+    <ellipse cx="960" cy="175" rx="170" ry="60" stroke-width="1.5"/>
+    <ellipse cx="960" cy="175" rx="130" ry="150" stroke-width="1.5"/>
+  </g>
+
+  <!-- headline -->
+  <text x="60" y="150" font-family="'Segoe UI', Arial, sans-serif" font-weight="700"
+        font-size="56" fill="url(#textGrad)">
+    <tspan x="60" textLength="720" lengthAdjust="spacingAndGlyphs">Norton Antivirus Full</tspan>
+    <tspan x="60" dy="66" textLength="500" lengthAdjust="spacingAndGlyphs">Version Download</tspan>
+  </text>
+
+  <!-- accent underline -->
+  <rect x="62" y="228" width="220" height="5" fill="#f5a623" opacity="0.9"/>
+
+  <!-- tagline -->
+  <text x="60" y="270" font-family="'Segoe UI', Arial, sans-serif" font-weight="400"
+        font-size="23" fill="#a9c1e8" textLength="760" lengthAdjust="spacingAndGlyphs">
+    Download and activate the full version of Norton Antivirus for
+  </text>
+  <text x="60" y="300" font-family="'Segoe UI', Arial, sans-serif" font-weight="400"
+        font-size="23" fill="#a9c1e8" textLength="300" lengthAdjust="spacingAndGlyphs">
+    complete PC protection
+  </text>
+</svg>
